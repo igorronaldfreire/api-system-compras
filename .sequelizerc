@@ -1,0 +1,8 @@
+const { resolve, dirname } = require('path'); // importando somente o resolve do path
+
+module.exports = { // diretorio / pasta / pasta/ arquivo
+  config: resolve(__dirname, 'src', 'config', 'dataBaseConfig.js'),
+  'models-path': resolve(__dirname, 'src', 'models'),
+  'migrations-path': resolve(__dirname, 'src', 'database', 'migrations'), // a pasta migration é criada automatica
+  'seeders-path': resolve(__dirname, 'src', 'database', 'seeds'),// a pasta seeds é criada automatica
+};
